@@ -1,5 +1,7 @@
 # Basic-Meetings
 
+## A basic black and white based theme. Conventional but functional.
+
 1) Login to https://chimemeetings.com
 2) Access https://chimemeetings.com/chime/admin
 3) Go to User Interace Page
