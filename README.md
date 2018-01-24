@@ -19,5 +19,5 @@ A basic black and white based theme. Conventional but functional.
 
 Notes:
 
-The css file above includes an import link to the Font Awesome CDN. You may wish to download this file, host it with your css and change the link.
+The css file above includes an import link to the Font Awesome CDN. You may wish to download and host it yourself, remember to change the import link.
 If you haven't configured a Box API key you will get a warning about sharing not being configured. This is normal.
