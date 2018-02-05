@@ -52,6 +52,7 @@
 #systemButtons {
     background-color: #222222;
 }
+
 .hoverButton {
     width: 45px;
     height: 45px;   
@@ -136,6 +137,10 @@
  color: white;
 }
 
+.hoverButton div:before {
+    height:30px !important;
+}
+
 .flyingTooltip {
     display:none;
 }
@@ -144,49 +149,61 @@
     background-image: url("") !important;
     font-family: "FontAwesome";
     content: "\f131";
-    font-size: 30px;
+    font-size: 28px;
     color:red;
+    font-weight: 100 !important;
+
 }
 
 .videoMutedIcon:before {
     background-image: url("") !important;
     font-family: "FontAwesome";
     content: "\f03d";
-    font-size: 30px;
+    font-size: 28px;
     text-decoration: line-through;
     color:red;
+    font-weight: 100 !important;
+
 }
 
 .chat.up:before, .chatButton .up:before, .chat.over:before, .chatButton .over:before {
     background-image: url("") !important;
     font-family: "FontAwesome";
     content: "\f086";
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: 100 !important;
+
 }
 
 .participantsIcon.up:before, .participantsIcon .up:before, .participantsIcon.over:before, .participantsIcon .over:before {
     font-family: "FontAwesome";
     content: "\f0c0";
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: 100 !important;
+
 }
 
 .docShare.up:before, .docShare .up:before, .docShare.over:before, .docShare .over:before {
     font-family: "FontAwesome";
     content: "\f15b";
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: 100 !important;
+
 }
 
 .inviteButton.up:before, .inviteButton .up:before, .inviteButton.over:before, .inviteButton .over:before {
     font-family: "FontAwesome";
     content: "\f0e0";
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: 100 !important;
 }
 
 .settings.up:before, .settings .up:before, .settings.over:before, .settings .over:before {
     background-image: none;
     font-family: "FontAwesome";
     content: "\f013";
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: 100 !important;
 }
 
 .enterFullscreen.up:before, .enterFullscreen .up:before, .enterFullscreen.over:before, .enterFullscreen .over:before, .exitFullscreen.up:before, .exitFullscreen .up:before,
@@ -194,45 +211,61 @@
     background-image: none;
     font-family: "FontAwesome";
     content: "\f0b2";
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: 100 !important;
 }
 
 .leave.up:before, .leave .up:before, .leave.over:before, .leave .over:before {
     background-image: none;
     font-family: "FontAwesome";
     content: "\f08b";
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: 100 !important;
+
+}
+
+.recordButton .up:before, .recordButton.up:before, .recordButton .over:before, .recordButton.over:before, .recordButton .over:before, .recordButton.over:before  {
+    background-image: none;
+    font-family: "FontAwesome";
+    content: "\f111";
+    font-size: 28px;
+    font-weight: 100 !important;
+
 }
 
 .micOff .up:before, .micOff.up:before, .micOff .over:before, .micOff.over:before, .micOn .over:before, .micOn.over:before  {
     background-image: none;
     font-family: "FontAwesome";
     content: "\f131";
-    font-size: 30px;
+    font-size: 28px;
     color:red;
+    font-weight: 100 !important;
+
 }
 
 .micOn .up:before, .micOn.up:before{
     background-image: none;
     font-family: "FontAwesome";
     content: "\f130";
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: 100 !important;
 }
 
 .cameraOff .up:before, .cameraOff.up:before, .cameraOff .over:before, .cameraOff.over:before, .cameraOn .over:before, .cameraOn.over:before {
     background-image: none;
     font-family: "FontAwesome";
     content: "\f03d";
-    font-size: 30px;
+    font-size: 28px;
     text-decoration: line-through;
     color:red;
+    font-weight: 100 !important;
 }
 
 .cameraOn .up:before, .cameraOn.up:before {
     background-image: none;
     font-family: "FontAwesome";
     content: "\f03d";
-    font-size: 30px;
+    font-size: 28px;
     text-decoration: line-through;
 }
 
@@ -278,6 +311,7 @@
     font-size: 12px;
     float: left;
     margin: 0 auto;
+    margin-top: 2px;
 }
 
 .enterFullscreen.up:after, .enterFullscreen .up:after, .enterFullscreen.over:after, .enterFullscreen .over:after, .exitFullscreen.up:after, .exitFullscreen .up:after,
@@ -292,6 +326,15 @@
 
 .leave.up:after, .leave .up:after, .leave.over:after, .leave .over:after {
     content: "Leave";
+    font-size: 12px;
+    float: left;
+    left: 5px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.recordButton.up:after, .recordButton .up:after, .recordButton.over:after, .recordButton .over:after {
+    content: "Record";
     font-size: 12px;
     float: left;
     left: 5px;
@@ -389,6 +432,6 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
-    
+
 
 }
