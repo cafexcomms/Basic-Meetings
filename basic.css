@@ -63,7 +63,8 @@
 }
 
 .thumbBaseElement .videoContent {
-    border: 1px solid white;
+    border: 1px solid white !important;
+    background-color: : black !important;
 }
 
 .thumbVideoContainer .thumbBaseElement {
@@ -269,6 +270,24 @@
     text-decoration: line-through;
 }
 
+
+.userFeedback .up:before, .userFeedback.up:before, .userFeedback .over:before, .userFeedback.over:before, .userFeedback .over:before, .userFeedback.over:before {
+    background-image: none;
+    font-family: "FontAwesome";
+    content: "\f0a1";
+    font-size: 28px;
+    color:white;
+    font-weight: 100 !important;
+}
+
+.userFeedback .up:before, .userFeedback.up:before {
+    background-image: none;
+    font-family: "FontAwesome";
+    content: "\f0a1";
+    font-size: 28px;
+    font-weight: 100 !important;
+}
+
 /* Labels */
 .chat.up:after, .chatButton .up:after, .chat.over:after, .chatButton .over:after {
     content: "Chat";
@@ -379,6 +398,16 @@
     position: absolute;
     bottom: 0px;
 }
+
+.userFeedback .up:after, .userFeedback.up:after, .userFeedback .over:after, .userFeedback.over:after, .userFeedback .over:after, .userFeedback.over:after {
+    content: "Bullhorn";
+    font-size: 12px;
+    float: left;
+    left: 8px;
+    position: absolute;
+    bottom: 0px;
+}
+
 
 /* Dialogues */
 
