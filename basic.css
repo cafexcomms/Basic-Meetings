@@ -67,6 +67,10 @@
     background-color: : black !important;
 }
 
+.activeVideoContainer .thumbBaseElement .videoContent {
+    border: 1px black !important;
+}
+
 .thumbVideoContainer .thumbBaseElement {
     width: 150px;
     height: 100px;
