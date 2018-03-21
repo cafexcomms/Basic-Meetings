@@ -288,6 +288,14 @@
     font-weight: 100 !important;
 }
 
+.disclaimerButton .up:before, .disclaimerButton.up:before, .disclaimerButton .over:before, .disclaimerButton.over:before, .disclaimerButton .over:before, .disclaimerButton.over:before {
+    background-image: none;
+    font-family: "FontAwesome";
+    content: "\f05a";
+    font-size: 28px;
+    font-weight: 100 !important;
+}
+
 /* Labels */
 .chat.up:after, .chatButton .up:after, .chat.over:after, .chatButton .over:after {
     content: "Chat";
@@ -400,7 +408,17 @@
 }
 
 .userFeedback .up:after, .userFeedback.up:after, .userFeedback .over:after, .userFeedback.over:after, .userFeedback .over:after, .userFeedback.over:after {
-    content: "Bullhorn";
+    content: "Feedback";
+    font-size: 12px;
+    float: left;
+    left: 8px;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+.disclaimerButton .up:after, .disclaimerButton.up:after, .disclaimerButton .over:after, .disclaimerButton.over:after, .disclaimerButton .over:after, .disclaimerButton.over:after {
+    content: "Terms";
     font-size: 12px;
     float: left;
     left: 8px;
