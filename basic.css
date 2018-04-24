@@ -1,6 +1,6 @@
 @import url("https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
 
-#chimeRoot {
+#meetingsRoot {
     background: #000000;
 }
 
@@ -51,6 +51,10 @@
 
 #systemButtons {
     background-color: #222222;
+}
+
+#topBar {
+    visibility: hidden;
 }
 
 .hoverButton {
@@ -108,15 +112,15 @@
     background-color: #eeeeee;
 }
 
-.chimeform input[type=button], .chimeform input[type=submit] {
+.meetingsform input[type=button], .meetingsform input[type=submit] {
     background-color: #cccccc;
 }
 
-.chimeAlert {
+.meetingsAlert {
     background-color: #eeeeee;
 }
 
-.chimeAlert #alert_heading, .chimeAlert #alert_subheading, .chimeAlert H1
+.meetingsAlert #alert_heading, .meetingsAlert #alert_subheading, .meetingsAlert H1
     {
     background-color: #444444;
 }
@@ -126,7 +130,7 @@
 }
 
 /* Images */
-.chimeSystemMessageLogo {
+.meetingsSystemMessageLogo {
     background-image: url(logo.png);
 }
 
@@ -139,20 +143,28 @@
 
 .hoverButton div, .mutedIcon, .videoMutedIcon {
  background-image: url("") !important;
- color: white;
+ color: white !important;
 }
 
 .hoverButton div:before {
     height:30px !important;
 }
 
+.hoverButton {
+    color: white !important;
+}
+
+.mainMenuBarSeparator {
+    display: none !important;
+}
+
 .flyingTooltip {
     display:none;
 }
 
-.mutedIcon:before {
+.font-button-microphone-off:before, .mutedIcon:before {
     background-image: url("") !important;
-    font-family: "FontAwesome";
+    font-family: "FontAwesome" !important;
     content: "\f131";
     font-size: 28px;
     color:red;
@@ -160,9 +172,9 @@
 
 }
 
-.videoMutedIcon:before {
+.font-button-camera-off:before, .videoMutedIcon:before {
     background-image: url("") !important;
-    font-family: "FontAwesome";
+    font-family: "FontAwesome" !important;
     content: "\f03d";
     font-size: 28px;
     text-decoration: line-through;
@@ -171,76 +183,76 @@
 
 }
 
-.chat.up:before, .chatButton .up:before, .chat.over:before, .chatButton .over:before {
+.font-button-chat:before, .chat.up:before, .chatButton .up:before, .chat.over:before, .chatButton .over:before {
     background-image: url("") !important;
-    font-family: "FontAwesome";
+    font-family: "FontAwesome" !important;
     content: "\f086";
     font-size: 28px;
     font-weight: 100 !important;
 
 }
 
-.participantsIcon.up:before, .participantsIcon .up:before, .participantsIcon.over:before, .participantsIcon .over:before {
-    font-family: "FontAwesome";
+.font-button-participants:before, .participantsIcon.up:before, .participantsIcon .up:before, .participantsIcon.over:before, .participantsIcon .over:before {
+    font-family: "FontAwesome" !important;
     content: "\f0c0";
     font-size: 28px;
     font-weight: 100 !important;
 
 }
 
-.docShare.up:before, .docShare .up:before, .docShare.over:before, .docShare .over:before {
-    font-family: "FontAwesome";
+.font-button-present:before, .docShare.up:before, .docShare .up:before, .docShare.over:before, .docShare .over:before {
+    font-family: "FontAwesome" !important;
     content: "\f15b";
     font-size: 28px;
     font-weight: 100 !important;
 
 }
 
-.inviteButton.up:before, .inviteButton .up:before, .inviteButton.over:before, .inviteButton .over:before {
-    font-family: "FontAwesome";
+.font-button-message:before, .inviteButton.up:before, .inviteButton .up:before, .inviteButton.over:before, .inviteButton .over:before {
+    font-family: "FontAwesome" !important;
     content: "\f0e0";
     font-size: 28px;
     font-weight: 100 !important;
 }
 
-.settings.up:before, .settings .up:before, .settings.over:before, .settings .over:before {
+.font-button-settings:before, .settings.up:before, .settings .up:before, .settings.over:before, .settings .over:before {
     background-image: none;
-    font-family: "FontAwesome";
+    font-family: "FontAwesome" !important;
     content: "\f013";
     font-size: 28px;
     font-weight: 100 !important;
 }
 
-.enterFullscreen.up:before, .enterFullscreen .up:before, .enterFullscreen.over:before, .enterFullscreen .over:before, .exitFullscreen.up:before, .exitFullscreen .up:before,
+.font-button-fullscreen:before, .enterFullscreen.up:before, .enterFullscreen .up:before, .enterFullscreen.over:before, .enterFullscreen .over:before, .exitFullscreen.up:before, .exitFullscreen .up:before,
 .exitFullscreen.over:before, .exitFullscreen .over:before {
     background-image: none;
-    font-family: "FontAwesome";
+    font-family: "FontAwesome" !important;
     content: "\f0b2";
     font-size: 28px;
     font-weight: 100 !important;
 }
 
-.leave.up:before, .leave .up:before, .leave.over:before, .leave .over:before {
+.font-button-leave:before, .leave.up:before, .leave .up:before, .leave.over:before, .leave .over:before {
     background-image: none;
-    font-family: "FontAwesome";
+    font-family: "FontAwesome" !important;
     content: "\f08b";
     font-size: 28px;
     font-weight: 100 !important;
 
 }
 
-.recordButton .up:before, .recordButton.up:before, .recordButton .over:before, .recordButton.over:before, .recordButton .over:before, .recordButton.over:before  {
+.font-button-record:before, .recordButton .up:before, .recordButton.up:before, .recordButton .over:before, .recordButton.over:before, .recordButton .over:before, .recordButton.over:before  {
     background-image: none;
-    font-family: "FontAwesome";
+    font-family: "FontAwesome" !important;
     content: "\f111";
     font-size: 28px;
     font-weight: 100 !important;
 
 }
 
-.micOff .up:before, .micOff.up:before, .micOff .over:before, .micOff.over:before, .micOn .over:before, .micOn.over:before  {
+.font-button-microphone-off:before, .micOff .up:before, .micOff.up:before, .micOff .over:before, .micOff.over:before, .micOn .over:before, .micOn.over:before  {
     background-image: none;
-    font-family: "FontAwesome";
+    font-family: "FontAwesome" !important;
     content: "\f131";
     font-size: 28px;
     color:red;
@@ -248,17 +260,17 @@
 
 }
 
-.micOn .up:before, .micOn.up:before{
+.font-button-microphone-on:before, .micOn .up:before, .micOn.up:before{
     background-image: none;
-    font-family: "FontAwesome";
+    font-family: "FontAwesome" !important;
     content: "\f130";
     font-size: 28px;
     font-weight: 100 !important;
 }
 
-.cameraOff .up:before, .cameraOff.up:before, .cameraOff .over:before, .cameraOff.over:before, .cameraOn .over:before, .cameraOn.over:before {
+.font-button-camera-off:before, .cameraOff .up:before, .cameraOff.up:before, .cameraOff .over:before, .cameraOff.over:before, .cameraOn .over:before, .cameraOn.over:before {
     background-image: none;
-    font-family: "FontAwesome";
+    font-family: "FontAwesome" !important;
     content: "\f03d";
     font-size: 28px;
     text-decoration: line-through;
@@ -266,27 +278,27 @@
     font-weight: 100 !important;
 }
 
-.cameraOn .up:before, .cameraOn.up:before {
+.font-button-camera-on:before, .cameraOn .up:before, .cameraOn.up:before {
     background-image: none;
-    font-family: "FontAwesome";
+    font-family: "FontAwesome" !important;
     content: "\f03d";
     font-size: 28px;
     text-decoration: line-through;
 }
 
 
-.userFeedback .up:before, .userFeedback.up:before, .userFeedback .over:before, .userFeedback.over:before, .userFeedback .over:before, .userFeedback.over:before {
+.font-button-feedback:before, .userFeedback .up:before, .userFeedback.up:before, .userFeedback .over:before, .userFeedback.over:before, .userFeedback .over:before, .userFeedback.over:before {
     background-image: none;
-    font-family: "FontAwesome";
+    font-family: "FontAwesome" !important;
     content: "\f0a1";
     font-size: 28px;
     color:white;
     font-weight: 100 !important;
 }
 
-.userFeedback .up:before, .userFeedback.up:before {
+.font-button-feedback:before, .userFeedback .up:before, .userFeedback.up:before {
     background-image: none;
-    font-family: "FontAwesome";
+    font-family: "FontAwesome" !important;
     content: "\f0a1";
     font-size: 28px;
     font-weight: 100 !important;
@@ -301,7 +313,7 @@
 }
 
 /* Labels */
-.chat.up:after, .chatButton .up:after, .chat.over:after, .chatButton .over:after {
+.font-button-chat:after, .chat.up:after, .chatButton .up:after, .chat.over:after, .chatButton .over:after {
     content: "Chat";
     font-size: 12px;
     float: left;
@@ -310,7 +322,7 @@
     bottom: 0px;
 }
 
-.participantsIcon.up:after, .participantsIcon .up:after, .participantsIcon.over:after, .participantsIcon .over:after {
+.font-button-participants:after, .participantsIcon.up:after, .participantsIcon .up:after, .participantsIcon.over:after, .participantsIcon .over:after {
     content: "Roster";
     font-size: 12px;
     float: left;
@@ -319,7 +331,7 @@
     bottom: 0px;
 }
 
-.docShare.up:after, .docShare .up:after, .docShare.over:after, .docShare .over:after {
+.font-button-present:after, .docShare.up:after, .docShare .up:after, .docShare.over:after, .docShare .over:after {
     content: "Share";
     font-size: 12px;
     float: left;
@@ -328,7 +340,7 @@
     bottom: 0px;
 }
 
-.inviteButton.up:after, .inviteButton .up:after, .inviteButton.over:after, .inviteButton .over:after {
+.font-button-message:after, .inviteButton.up:after, .inviteButton .up:after, .inviteButton.over:after, .inviteButton .over:after {
     content: "Invite";
     font-size: 12px;
     float: left;
@@ -337,7 +349,7 @@
     bottom: 0px;
 }
 
-.settings.up:after, .settings .up:after, .settings.over:after, .settings .over:after {
+.font-button-settings:after, .settings.up:after, .settings .up:after, .settings.over:after, .settings .over:after {
     content: "Settings";
     font-size: 12px;
     float: left;
@@ -345,7 +357,7 @@
     margin-top: 2px;
 }
 
-.enterFullscreen.up:after, .enterFullscreen .up:after, .enterFullscreen.over:after, .enterFullscreen .over:after, .exitFullscreen.up:after, .exitFullscreen .up:after,
+.font-button-enter-fullscreen:after, .enterFullscreen.up:after, .enterFullscreen .up:after, .enterFullscreen.over:after, .enterFullscreen .over:after, .exitFullscreen.up:after, .exitFullscreen .up:after,
 .exitFullscreen.over:after, .exitFullscreen .over:after {
     content: "Full";
     font-size: 12px;
@@ -355,7 +367,7 @@
     bottom: 0px;
 }
 
-.leave.up:after, .leave .up:after, .leave.over:after, .leave .over:after {
+.font-button-leave:after, .leave.up:after, .leave .up:after, .leave.over:after, .leave .over:after {
     content: "Leave";
     font-size: 12px;
     float: left;
@@ -364,7 +376,7 @@
     bottom: 0px;
 }
 
-.recordButton.up:after, .recordButton .up:after, .recordButton.over:after, .recordButton .over:after {
+.font-button-record:after, .recordButton.up:after, .recordButton .up:after, .recordButton.over:after, .recordButton .over:after {
     content: "Record";
     font-size: 12px;
     float: left;
@@ -373,7 +385,7 @@
     bottom: 0px;
 }
 
-.micOff .up:after, .micOff.up:after, .micOff .over:after, .micOff.over:after, .micOn .over:after, .micOn.over:after  {
+.font-button-microphone-off:after, .micOff .up:after, .micOff.up:after, .micOff .over:after, .micOff.over:after, .micOn .over:after, .micOn.over:after  {
     content: "Audio";
     font-size: 12px;
     float: left;
@@ -383,7 +395,7 @@
     color:red;
 }
 
-.micOn .up:after, .micOn.up:after{
+.font-button-microphone-on:after, .micOn .up:after, .micOn.up:after{
     content: "Audio";
     font-size: 12px;
     float: left;
@@ -392,7 +404,7 @@
     bottom: 0px;
 }
 
-.cameraOff .up:after, .cameraOff.up:after, .cameraOff .over:after, .cameraOff.over:after, .cameraOn .over:after, .cameraOn.over:after {
+.font-button-camera-off:after, .cameraOff .up:after, .cameraOff.up:after, .cameraOff .over:after, .cameraOff.over:after, .cameraOn .over:after, .cameraOn.over:after {
     content: "Video";
     font-size: 12px;
     float: left;
@@ -402,7 +414,7 @@
     color:red;
 }
 
-.cameraOn .up:after, .cameraOn.up:after {
+.font-button-camera-on:after, .cameraOn .up:after, .cameraOn.up:after {
     content: "Video";
     font-size: 12px;
     float: left;
@@ -411,7 +423,7 @@
     bottom: 0px;
 }
 
-.userFeedback .up:after, .userFeedback.up:after, .userFeedback .over:after, .userFeedback.over:after, .userFeedback .over:after, .userFeedback.over:after {
+.font-button-feedback:after, .userFeedback .up:after, .userFeedback.up:after, .userFeedback .over:after, .userFeedback.over:after, .userFeedback .over:after, .userFeedback.over:after {
     content: "Feedback";
     font-size: 12px;
     float: left;
@@ -421,7 +433,7 @@
 }
 
 
-.disclaimerButton .up:after, .disclaimerButton.up:after, .disclaimerButton .over:after, .disclaimerButton.over:after, .disclaimerButton .over:after, .disclaimerButton.over:after {
+.font-button-disclaimer:after, .disclaimerButton .up:after, .disclaimerButton.up:after, .disclaimerButton .over:after, .disclaimerButton.over:after, .disclaimerButton .over:after, .disclaimerButton.over:after {
     content: "Terms";
     font-size: 12px;
     float: left;
@@ -433,34 +445,38 @@
 
 /* Dialogues */
 
-#dialogContainer form {
+#dialogContainer form, #feedbackFormContainer form {
     background-color: lightgrey;
     color: black;
 }
 
-#dialogContainer h1 {
+#dialogContainer h1, #feedbackFormContainer h1 {
     background-color: black;
 }
 
-#dialogContainer .dialog_subheading {
+#dialogContainer .dialog_subheading, #feedbackFormContainer .subheading {
     background-color: black;
 }
 
-#dialogContainer input.button {
+#dialogContainer input.button, #feedbackFormContainer input[type="button"] {
     background-color: black;
 }
 
-#dialogContainer input.button:hover {
+#dialogContainer input.button:hover, #feedbackFormContainer input[type="button"] :hover {
     color: lightgrey;
 }
 
 
-#dialogContainer textarea {
+#dialogContainer textarea, #feedbackFormContainer textarea{
     color: black;
 }
 
 #dialogBG {
     background:rgba(80,80,80,0.8) !important;
+}
+
+#feedbackFormBG {
+    background: rgba(0, 0, 0, 0.6) !important;
 }
 
 /* Panels */
@@ -471,11 +487,11 @@
     background: rgba(120,120,120,0.8);
 }
 
-#chimePanels #topSpace {
+#meetingsPanels #topSpace {
     background: rgba(40,40,40,0.8);
 }
 
-#chatMessagesContainer div, #chimePanels #topSpace 
+#chatMessagesContainer div, #meetingsPanels #topSpace 
  {
     color: white !important;
 }
